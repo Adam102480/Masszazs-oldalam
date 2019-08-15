@@ -1,0 +1,367 @@
+/* ===GENERAL STYLES===*/
+
+* {
+  box-sizing: border-box;
+}
+
+/* Single-direction margin */
+h1,h2,h3,
+ul,p,img {
+    margin-bottom: 1.2rem;
+}
+
+body {
+  background: url('assets/massage-cover.jpg') no-repeat center center;
+  font-family: 'Libre Baskerville', serif;
+  font-size: 1.5rem;
+  line-height: 1.2;
+  color: #444349;
+}
+
+.locations,
+.program,
+.gifts,
+.questions,
+.contact {
+  width: 95%;
+  margin: 1.5rem auto;
+  padding: .5rem 1rem;
+  text-align: center;
+}
+
+h1,
+h2 {
+  font-family: 'Great Vibes', cursive;
+}
+
+h2 {
+  font-size: 3rem;
+}
+
+h3 {
+  font-size: 1.8rem;
+}
+
+a {
+  text-decoration: none;
+  color: #bd806e;
+}
+
+a:hover {
+  color: #eda087;
+  transition: color .20s ease-in-out;
+}
+
+/* NAV STYLES */
+
+nav {
+  font-size: 1.5rem;
+  position: fixed;
+  width:100vw; 
+  
+}
+
+nav ul {
+  background-color:hsla(0, 0%, 0%, 0.5);
+  text-align: center;
+  
+}
+
+nav li {
+  font-family: 'Libre Baskerville', serif;
+  font-size: 1.2rem;
+  line-height: 4rem;
+  letter-spacing: 2px;
+ 
+}
+
+nav a {
+  text-decoration: none;
+  color: #00ff00;
+  display: block;
+  border-radius: 2.5rem;
+}
+
+nav a:hover {
+  background-color: #fff;
+  transition: background-color .3s ease-in-out;
+}
+
+nav a.active {
+  background-color: ;
+  color: ;
+}
+
+@media (min-width: 600px) {
+
+  nav li {
+    display: inline-block;
+    border-bottom: 2rem;
+    width: 12.5rem;
+	font-size: 1.5rem;
+	font-weight: 500;
+  }
+
+}
+
+
+/* HEADER STYLES */
+
+.cover {
+  background: url('assets/massage-cover.jpg') no-repeat center/cover;
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+  text-align: center;
+  display: table;
+}
+
+@media (min-width: 768px) {
+
+	.cover {
+        background: url('assets/massage-cover.jpg') no-repeat center/cover;
+		}
+
+}
+
+.mainline-wrapper {
+    display: table-cell;
+    vertical-align: middle;
+    padding: .625rem;
+}
+
+.mainline {
+  margin: 0 auto;
+  padding: .925rem;
+  color: hsla(0,0%,100%,.9);
+  background: hsla(100,0%,0%,.0);
+    }
+
+.mainline h1 {
+    font-size: 6.4rem;
+    color:  #ff4500;
+    margin-bottom: -8.6rem;
+    font-weight: 600;
+    letter-spacing: 0.7rem;
+    line-height:8rem;
+     }
+
+@media (min-width: 768px) {
+
+  .mainline {
+    padding: 2.25rem;
+    border-radius: 2rem;
+    width: 55vw;
+  }
+    
+    .mainline h1 {
+    font-size: 6rem;
+  }
+    
+}
+
+
+@media (min-width: 768px) {
+
+  .tagline {
+    text-transform: uppercase;
+  }
+
+}
+
+date {
+  font-size: 1.4rem;
+  letter-spacing: .15rem;
+  vertical-align: middle;
+}
+
+
+/* Location STYLES */
+.blurb img {
+  height: 9.5rem;
+}
+
+.blurb h3 {
+  font-weight: 600;
+}
+
+.blurb div {
+  font-family: 'Muli', sans-serif;
+}
+
+@media (min-width: 768px) {
+
+  .blurb {
+   display: inline-block;
+   width: 30%;
+   padding: 2rem;
+   margin: 1rem;
+  }
+
+}
+
+.blurb::after {
+  content: "";
+  display: block;
+  height: .12rem;
+  width: 30vw;
+  margin: 1.1rem auto;
+  background-color: #444349;
+}
+
+@media (min-width: 768px) {
+
+  .blurb::after {
+   display:none;
+  }
+
+}
+
+/* Program STYLES */
+
+.program {
+  width: 100vw;
+  text-align: left;
+  background: hsla(100,0%,0%,.99);
+  color: #d2ba87;
+  font-family: 'Muli', sans-serif;
+}
+
+@media (min-width: 768px) {
+
+  .program-wrapper {
+   width: 30vw;
+   margin: 0 auto;
+  }
+
+}
+
+.program h2 {
+  font-family: 'Great Vibes', cursive;
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.program p {
+  font-style: italic;
+}
+
+.program ul {
+  letter-spacing: .125rem;
+}
+
+/* Gift STYLES */
+
+.gifts {
+    background: hsla(10,20%,100%,1);
+    width: 100vw;
+    font-family: 'Muli', sans-serif;
+    color: #444349;
+    text-align: center;
+    }
+
+.gifts h2 {
+  font-family: 'Great Vibes', cursive;
+  margin-top: 1rem;
+  text-align: center;
+}  
+
+.gifts img {
+  height: 9.5rem;
+    }  
+    
+.gifts p:last-child {
+  margin-bottom: 0;
+}
+
+/* FAQ STYLES */
+
+.faq {
+  width: 100vw;
+  text-align: center;
+  background: hsla(100,0%,0%,.99);
+  color: #d2ba87;
+    }
+
+.faq h2 {
+  margin-top: 2.2rem;
+}
+
+.faq p {
+  font-family: 'Muli', sans-serif;
+  text-align: left;
+  margin-left: 1rem;
+}
+
+.question-group::after {
+  content: "";
+  display: block;
+  height: .15rem;
+  width: 50vw;
+  margin: 1.5rem auto;
+  background-color: #d2ba87;
+}
+
+.question {
+    font-weight: 700;
+    margin-bottom: .2rem;
+    }
+
+.answer {
+  margin-bottom: 1.5rem;
+}
+
+@media (min-width: 768px) {
+
+  .question-group {
+    display: inline-block;
+    width: 30%;
+    vertical-align: top;
+    padding: 1.5rem;
+    margin: .7rem;
+  }
+
+  .question-group::after {
+    display: none;
+  }
+
+  .question-group h3 {
+    text-align: left;
+  }
+
+}
+
+/* Footer STYLES */
+
+footer {
+  height: 10vh;
+  width: 100vw;
+  background-color: #606060;
+  color: #fff;
+  font-family: 'Muli', sans-serif;
+  display: table;
+  text-align: center;
+  font-size: .875rem;
+}
+
+.footer-wrapper {
+  display: table-cell;
+  vertical-align: middle;
+  padding: .5rem 1rem;
+}
+
+footer p {
+  margin-bottom: 0;
+}
+
+footer small {
+  line-height: 1.5;
+}
+
+@media (min-width: 768px) {
+
+  footer {
+    min-height: 6vh;
+  }
+
+}
